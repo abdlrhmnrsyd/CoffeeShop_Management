@@ -315,7 +315,7 @@ public class MainDashboard extends javax.swing.JFrame {
         panelHistoryTab.add(rightHistoryPanel);
         rightHistoryPanel.setBounds(630, 15, 490, 600);
 
-        tabbedPane.addTab("📜 Riwayat Transaksi", panelHistoryTab);
+        tabbedPane.addTab("Riwayat Transaksi", panelHistoryTab);
 
         panelMenuTab.setLayout(null);
 
@@ -341,6 +341,7 @@ public class MainDashboard extends javax.swing.JFrame {
         panelFormMenu.add(jLabel14);
         jLabel14.setBounds(20, 130, 100, 25);
 
+        cbMenuKategori.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "", "", "" }));
         panelFormMenu.add(cbMenuKategori);
         cbMenuKategori.setBounds(130, 130, 340, 25);
 
@@ -412,7 +413,7 @@ public class MainDashboard extends javax.swing.JFrame {
         panelMenuTab.add(panelTableMenu);
         panelTableMenu.setBounds(530, 15, 590, 600);
 
-        tabbedPane.addTab("📋 Kelola Menu", panelMenuTab);
+        tabbedPane.addTab("Kelola Menu", panelMenuTab);
 
         panelPosTab.setLayout(null);
 
@@ -590,7 +591,7 @@ public class MainDashboard extends javax.swing.JFrame {
         panelPosTab.add(rightPosPanel);
         rightPosPanel.setBounds(580, 15, 540, 600);
 
-        tabbedPane.addTab("🛒 Transaksi Penjualan (POS)", panelPosTab);
+        tabbedPane.addTab("\\ud83d\\uded2 Transaksi Penjualan (POS)", panelPosTab);
 
         getContentPane().add(tabbedPane, java.awt.BorderLayout.CENTER);
 
