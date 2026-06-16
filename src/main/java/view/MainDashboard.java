@@ -487,7 +487,7 @@ public class MainDashboard extends javax.swing.JFrame {
 
         btnAddToCart.setBackground(new java.awt.Color(120, 82, 70));
         btnAddToCart.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnAddToCart.setText("Tambah ke Keranjang ➔");
+        btnAddToCart.setText("Tambah ke Keranjang");
         btnAddToCart.addActionListener(this::btnAddToCartActionPerformed);
         leftPosPanel.add(btnAddToCart);
         btnAddToCart.setBounds(20, 545, 510, 40);
@@ -591,7 +591,7 @@ public class MainDashboard extends javax.swing.JFrame {
         panelPosTab.add(rightPosPanel);
         rightPosPanel.setBounds(580, 15, 540, 600);
 
-        tabbedPane.addTab("\\ud83d\\uded2 Transaksi Penjualan (POS)", panelPosTab);
+        tabbedPane.addTab("Transaksi Penjualan (POS)", panelPosTab);
 
         getContentPane().add(tabbedPane, java.awt.BorderLayout.CENTER);
 

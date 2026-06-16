@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.8" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
@@ -92,8 +92,8 @@
         <Container class="javax.swing.JPanel" name="panelHistoryTab">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="&#x1f4dc; Riwayat Transaksi">
-                <Property name="tabTitle" type="java.lang.String" value="\ud83d\udcdc Riwayat Transaksi" containsInvalidXMLChars="true"/>
+              <JTabbedPaneConstraints tabName="Riwayat Transaksi">
+                <Property name="tabTitle" type="java.lang.String" value="Riwayat Transaksi"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -212,7 +212,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblHistoryTotal">
                   <Properties>
-                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="0" green="179" red="255" type="rgb"/></Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="20" style="1"/>
                     </Property>
@@ -227,8 +226,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnVoid">
                   <Properties>
-                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="40" green="40" red="198" type="rgb"/></Property>
-                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="255" green="255" red="255" type="rgb"/></Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="13" style="1"/>
                     </Property>
@@ -250,8 +247,8 @@
         <Container class="javax.swing.JPanel" name="panelMenuTab">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="&#x1f4cb; Kelola Menu">
-                <Property name="tabTitle" type="java.lang.String" value="\ud83d\udccb Kelola Menu" containsInvalidXMLChars="true"/>
+              <JTabbedPaneConstraints tabName="Kelola Menu">
+                <Property name="tabTitle" type="java.lang.String" value="Kelola Menu"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -382,8 +379,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JButton" name="btnInsert">
                       <Properties>
-                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="50" green="125" red="46" type="rgb"/></Property>
-                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="255" green="255" red="255" type="rgb"/></Property>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="12" style="1"/>
                         </Property>
@@ -395,8 +390,6 @@
                     </Component>
                     <Component class="javax.swing.JButton" name="btnUpdate">
                       <Properties>
-                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="192" green="101" red="21" type="rgb"/></Property>
-                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="255" green="255" red="255" type="rgb"/></Property>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="12" style="1"/>
                         </Property>
@@ -408,8 +401,6 @@
                     </Component>
                     <Component class="javax.swing.JButton" name="btnDelete">
                       <Properties>
-                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="40" green="40" red="198" type="rgb"/></Property>
-                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="255" green="255" red="255" type="rgb"/></Property>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="12" style="1"/>
                         </Property>
@@ -421,8 +412,6 @@
                     </Component>
                     <Component class="javax.swing.JButton" name="btnCancel">
                       <Properties>
-                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="117" green="117" red="117" type="rgb"/></Property>
-                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="255" green="255" red="255" type="rgb"/></Property>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="12" style="1"/>
                         </Property>
@@ -491,8 +480,8 @@
         <Container class="javax.swing.JPanel" name="panelPosTab">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="&#x1f6d2; Transaksi Penjualan (POS)">
-                <Property name="tabTitle" type="java.lang.String" value="\ud83d\uded2 Transaksi Penjualan (POS)" containsInvalidXMLChars="true"/>
+              <JTabbedPaneConstraints tabName="Transaksi Penjualan (POS)">
+                <Property name="tabTitle" type="java.lang.String" value="Transaksi Penjualan (POS)"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -640,12 +629,13 @@
                 </Container>
                 <Component class="javax.swing.JButton" name="btnAddToCart">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="53" green="57" red="98" type="rgb"/></Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="255" green="255" red="255" type="rgb"/></Property>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="46" green="52" red="78" type="rgb"/>
+                    </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Tambah ke Keranjang &#x2794;"/>
+                    <Property name="text" type="java.lang.String" value="Tambah ke Keranjang"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddToCartActionPerformed"/>
@@ -753,7 +743,6 @@
                   </Constraints>
                 </Component>
                 <Container class="javax.swing.JPanel" name="totalDisplayPanel">
-                  <Properties><Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="21" green="22" red="33" type="rgb"/></Property></Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="20" y="355" width="500" height="80"/>
@@ -779,7 +768,6 @@
                     </Component>
                     <Component class="javax.swing.JLabel" name="lblTotalHarga">
                       <Properties>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="0" green="179" red="255" type="rgb"/></Property>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="30" style="1"/>
                         </Property>
@@ -809,7 +797,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChange">
                   <Properties>
-                          <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="80" green="175" red="76" type="rgb"/></Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="1"/>
                     </Property>
@@ -836,8 +823,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JButton" name="btnRemoveFromCart">
                       <Properties>
-                          <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="40" green="40" red="198" type="rgb"/></Property>
-                          <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="255" green="255" red="255" type="rgb"/></Property>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="12" style="1"/>
                         </Property>
@@ -849,8 +834,6 @@
                     </Component>
                     <Component class="javax.swing.JButton" name="btnClearOrder">
                       <Properties>
-                          <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="117" green="117" red="117" type="rgb"/></Property>
-                          <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="255" green="255" red="255" type="rgb"/></Property>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="12" style="1"/>
                         </Property>
@@ -862,8 +845,6 @@
                     </Component>
                     <Component class="javax.swing.JButton" name="btnCheckout">
                       <Properties>
-                          <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="50" green="125" red="46" type="rgb"/></Property>
-                          <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor"><Color blue="255" green="255" red="255" type="rgb"/></Property>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="14" style="1"/>
                         </Property>
