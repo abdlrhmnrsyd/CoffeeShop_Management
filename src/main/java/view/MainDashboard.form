@@ -1,866 +1,2434 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<Form version="1.8" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Form maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo" version="1.8">
+      
+  
   <Properties>
+            
+    
     <Property name="defaultCloseOperation" type="int" value="3"/>
+            
+    
     <Property name="title" type="java.lang.String" value="Form Coffee Shop Management"/>
+          
+  
   </Properties>
+      
+  
   <SyntheticProperties>
+            
+    
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+            
+    
     <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+          
+  
   </SyntheticProperties>
+      
+  
   <AuxValues>
+            
+    
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+            
+    
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+            
+    
     <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+            
+    
     <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+            
+    
     <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Integer" value="0"/>
+            
+    
     <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+            
+    
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="3"/>
+            
+    
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+            
+    
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,3,12,0,0,4,124"/>
+            
+    
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,112,0,0,3,-104"/>
+          
+  
   </AuxValues>
-
+      
+  
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+      
+  
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="headerPanel">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="35" green="39" red="62" type="rgb"/>
-        </Property>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[1150, 70]"/>
-        </Property>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-          <BorderConstraints direction="North"/>
-        </Constraint>
-      </Constraints>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-        <Property name="useNullLayout" type="boolean" value="true"/>
-      </Layout>
-      <SubComponents>
-        <Component class="javax.swing.JLabel" name="lblTitle">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="22" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="&#x2615; CAFE ESPRESSO MANAGEMENT SYSTEM"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="25" y="20" width="500" height="30"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JLabel" name="lblSubtitle">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="14" style="2"/>
-            </Property>
-            <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="Point of Sale &amp; Inventory Control"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="850" y="20" width="270" height="30"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-      </SubComponents>
-    </Container>
+            
+    
     <Container class="javax.swing.JTabbedPane" name="tabbedPane">
+                  
+      
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                        
+        
+        <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                              
+          
           <Font name="Segoe UI" size="14" style="1"/>
+                            
+        
         </Property>
+                      
+      
       </Properties>
+                  
+      
       <Events>
-        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="tabbedPaneStateChanged"/>
+                        
+        
+        <EventHandler event="stateChanged" handler="tabbedPaneStateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent"/>
+                      
+      
       </Events>
+                  
+      
       <Constraints>
+                        
+        
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                              
+          
           <BorderConstraints direction="Center"/>
+                            
+        
         </Constraint>
+                      
+      
       </Constraints>
-
+                  
+      
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+                  
+      
       <SubComponents>
+                        
+        
         <Container class="javax.swing.JPanel" name="panelHistoryTab">
+                              
+          
           <Constraints>
+                                    
+            
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                                          
+              
               <JTabbedPaneConstraints tabName="Riwayat Transaksi">
+                                                
+                
                 <Property name="tabTitle" type="java.lang.String" value="Riwayat Transaksi"/>
+                                              
+              
               </JTabbedPaneConstraints>
+                                        
+            
             </Constraint>
+                                  
+          
           </Constraints>
-
+                              
+          
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                                    
+            
             <Property name="useNullLayout" type="boolean" value="true"/>
+                                  
+          
           </Layout>
+                              
+          
           <SubComponents>
+                                    
+            
             <Container class="javax.swing.JPanel" name="leftHistoryPanel">
+                                          
+              
               <Properties>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                                
+                
+                <Property editor="org.netbeans.modules.form.editors2.BorderEditor" name="border" type="javax.swing.border.Border">
+                                                      
+                  
                   <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                                                            
+                    
                     <TitledBorder title="Daftar Riwayat Transaksi"/>
+                                                          
+                  
                   </Border>
+                                                    
+                
                 </Property>
+                                              
+              
               </Properties>
+                                          
+              
               <Constraints>
+                                                
+                
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="15" y="15" width="600" height="600"/>
+                                                      
+                  
+                  <AbsoluteConstraints height="480" width="480" x="12" y="12"/>
+                                                    
+                
                 </Constraint>
+                                              
+              
               </Constraints>
-
+                                          
+              
               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                                                
+                
                 <Property name="useNullLayout" type="boolean" value="true"/>
+                                              
+              
               </Layout>
+                                          
+              
               <SubComponents>
+                                                
+                
                 <Container class="javax.swing.JScrollPane" name="jScrollPaneHistory">
+                                                      
+                  
                   <AuxValues>
+                                                            
+                    
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                                                          
+                  
                   </AuxValues>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="30" width="560" height="550"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="440" width="448" x="16" y="24"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
-
+                                                      
+                  
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                                                      
+                  
                   <SubComponents>
+                                                            
+                    
                     <Component class="javax.swing.JTable" name="tabelHistory">
+                                                                  
+                      
                       <Properties>
-                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                                                                        
+                        
+                        <Property editor="org.netbeans.modules.form.editors2.TableModelEditor" name="model" type="javax.swing.table.TableModel">
+                                                                              
+                          
                           <Table columnCount="4" rowCount="0">
+                                                                                    
+                            
                             <Column editable="false" title="ID Transaksi" type="java.lang.Object"/>
+                                                                                    
+                            
                             <Column editable="false" title="Tanggal" type="java.lang.Object"/>
+                                                                                    
+                            
                             <Column editable="false" title="Nama Pelanggan" type="java.lang.Object"/>
+                                                                                    
+                            
                             <Column editable="false" title="Total Pembayaran" type="java.lang.Object"/>
+                                                                                  
+                          
                           </Table>
+                                                                            
+                        
                         </Property>
+                                                                        
+                        
                         <Property name="rowHeight" type="int" value="25"/>
+                                                                      
+                      
                       </Properties>
+                                                                  
+                      
                       <Events>
-                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tabelHistoryMouseClicked"/>
+                                                                        
+                        
+                        <EventHandler event="mouseClicked" handler="tabelHistoryMouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent"/>
+                                                                      
+                      
                       </Events>
+                                                                
+                    
                     </Component>
+                                                          
+                  
                   </SubComponents>
+                                                    
+                
                 </Container>
+                                              
+              
               </SubComponents>
+                                        
+            
             </Container>
+                                    
+            
             <Container class="javax.swing.JPanel" name="rightHistoryPanel">
+                                          
+              
               <Properties>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                                
+                
+                <Property editor="org.netbeans.modules.form.editors2.BorderEditor" name="border" type="javax.swing.border.Border">
+                                                      
+                  
                   <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                                                            
+                    
                     <TitledBorder title="Detail Transaksi Terpilih"/>
+                                                          
+                  
                   </Border>
+                                                    
+                
                 </Property>
+                                              
+              
               </Properties>
+                                          
+              
               <Constraints>
+                                                
+                
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="630" y="15" width="490" height="600"/>
+                                                      
+                  
+                  <AbsoluteConstraints height="480" width="392" x="504" y="12"/>
+                                                    
+                
                 </Constraint>
+                                              
+              
               </Constraints>
-
+                                          
+              
               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                                                
+                
                 <Property name="useNullLayout" type="boolean" value="true"/>
+                                              
+              
               </Layout>
+                                          
+              
               <SubComponents>
+                                                
+                
                 <Container class="javax.swing.JScrollPane" name="jScrollPaneHistoryDetail">
+                                                      
+                  
                   <AuxValues>
+                                                            
+                    
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                                                          
+                  
                   </AuxValues>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="30" width="450" height="410"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="328" width="360" x="16" y="24"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
-
+                                                      
+                  
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                                                      
+                  
                   <SubComponents>
+                                                            
+                    
                     <Component class="javax.swing.JTable" name="tabelHistoryDetail">
+                                                                  
+                      
                       <Properties>
-                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                                                                        
+                        
+                        <Property editor="org.netbeans.modules.form.editors2.TableModelEditor" name="model" type="javax.swing.table.TableModel">
+                                                                              
+                          
                           <Table columnCount="4" rowCount="0">
+                                                                                    
+                            
                             <Column editable="false" title="Menu" type="java.lang.Object"/>
+                                                                                    
+                            
                             <Column editable="false" title="Harga Satuan" type="java.lang.Object"/>
+                                                                                    
+                            
                             <Column editable="false" title="Qty" type="java.lang.Object"/>
+                                                                                    
+                            
                             <Column editable="false" title="Subtotal" type="java.lang.Object"/>
+                                                                                  
+                          
                           </Table>
+                                                                            
+                        
                         </Property>
+                                                                        
+                        
                         <Property name="rowHeight" type="int" value="25"/>
+                                                                      
+                      
                       </Properties>
+                                                                
+                    
                     </Component>
+                                                          
+                  
                   </SubComponents>
+                                                    
+                
                 </Container>
+                                                
+                
                 <Component class="javax.swing.JLabel" name="jLabel11">
+                                                      
+                  
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                            
+                    
+                    <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                                                                  
+                      
                       <Font name="Segoe UI" size="13" style="1"/>
+                                                                
+                    
                     </Property>
+                                                            
+                    
                     <Property name="text" type="java.lang.String" value="Total Transaksi:"/>
+                                                          
+                  
                   </Properties>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="460" width="150" height="25"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="120" x="16" y="368"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
+                                                    
+                
                 </Component>
+                                                
+                
                 <Component class="javax.swing.JLabel" name="lblHistoryTotal">
+                                                      
+                  
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                            
+                    
+                    
+                    <Property name="horizontalAlignment" type="int" value="4"/>
+                                                            
+                    
+                    <Property name="text" type="java.lang.String" value="Rp 0,00"/>
+                                                          
+                    
+                    
+                  
+                    <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="foreground" type="java.awt.Color">
+                      <Color blue="0" green="b3" red="ff" type="rgb"/>
+                    </Property>
+                    <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
                       <Font name="Segoe UI" size="20" style="1"/>
                     </Property>
-                    <Property name="horizontalAlignment" type="int" value="4"/>
-                    <Property name="text" type="java.lang.String" value="Rp 0,00"/>
                   </Properties>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="180" y="460" width="290" height="25"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="232" x="144" y="368"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
+                                                    
+                
                 </Component>
+                                                
+                
                 <Component class="javax.swing.JButton" name="btnVoid">
+                                                      
+                  
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                            
+                    
+                    
+                    <Property name="text" type="java.lang.String" value="⚠ Batalkan (Void) Transaksi"/>
+                                                          
+                    
+                    
+                    
+                  
+                    <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="background" type="java.awt.Color">
+                      <Color blue="28" green="28" red="c6" type="rgb"/>
+                    </Property>
+                    <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="foreground" type="java.awt.Color">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
                       <Font name="Segoe UI" size="13" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="&#x26a0; Batalkan (Void) Transaksi"/>
                   </Properties>
+                                                      
+                  
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVoidActionPerformed"/>
+                                                            
+                    
+                    <EventHandler event="actionPerformed" handler="btnVoidActionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent"/>
+                                                          
+                  
                   </Events>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="500" width="450" height="40"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="32" width="360" x="16" y="400"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
+                                                    
+                
                 </Component>
+                                              
+              
               </SubComponents>
+                                        
+            
             </Container>
+                                  
+          
           </SubComponents>
+                            
+        
         </Container>
+                        
+        
         <Container class="javax.swing.JPanel" name="panelMenuTab">
+                              
+          
           <Constraints>
+                                    
+            
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                                          
+              
               <JTabbedPaneConstraints tabName="Kelola Menu">
+                                                
+                
                 <Property name="tabTitle" type="java.lang.String" value="Kelola Menu"/>
+                                              
+              
               </JTabbedPaneConstraints>
+                                        
+            
             </Constraint>
+                                  
+          
           </Constraints>
-
+                              
+          
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                                    
+            
             <Property name="useNullLayout" type="boolean" value="true"/>
+                                  
+          
           </Layout>
+                              
+          
           <SubComponents>
+                                    
+            
             <Container class="javax.swing.JPanel" name="panelFormMenu">
+                                          
+              
               <Properties>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                                
+                
+                <Property editor="org.netbeans.modules.form.editors2.BorderEditor" name="border" type="javax.swing.border.Border">
+                                                      
+                  
                   <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                                                            
+                    
                     <TitledBorder title="Input Data Menu"/>
+                                                          
+                  
                   </Border>
+                                                    
+                
                 </Property>
+                                              
+              
               </Properties>
+                                          
+              
               <Constraints>
+                                                
+                
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="15" y="15" width="500" height="600"/>
+                                                      
+                  
+                  <AbsoluteConstraints height="480" width="400" x="12" y="12"/>
+                                                    
+                
                 </Constraint>
+                                              
+              
               </Constraints>
-
+                                          
+              
               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                                                
+                
                 <Property name="useNullLayout" type="boolean" value="true"/>
+                                              
+              
               </Layout>
+                                          
+              
               <SubComponents>
+                                                
+                
                 <Component class="javax.swing.JLabel" name="jLabel12">
+                                                      
+                  
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                            
+                    
+                    <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                                                                  
+                      
                       <Font name="Segoe UI" size="13" style="1"/>
+                                                                
+                    
                     </Property>
+                                                            
+                    
                     <Property name="text" type="java.lang.String" value="Kode Menu:"/>
+                                                          
+                  
                   </Properties>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="40" width="100" height="25"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="80" x="16" y="32"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
+                                                    
+                
                 </Component>
+                                                
+                
                 <Component class="javax.swing.JTextField" name="txtMenuId">
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="130" y="40" width="340" height="25"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="272" x="104" y="32"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
+                                                    
+                
                 </Component>
+                                                
+                
                 <Component class="javax.swing.JLabel" name="jLabel13">
+                                                      
+                  
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                            
+                    
+                    <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                                                                  
+                      
                       <Font name="Segoe UI" size="13" style="1"/>
+                                                                
+                    
                     </Property>
+                                                            
+                    
                     <Property name="text" type="java.lang.String" value="Nama Menu:"/>
+                                                          
+                  
                   </Properties>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="85" width="100" height="25"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="80" x="16" y="68"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
+                                                    
+                
                 </Component>
+                                                
+                
                 <Component class="javax.swing.JTextField" name="txtMenuNama">
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="130" y="85" width="340" height="25"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="272" x="104" y="68"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
+                                                    
+                
                 </Component>
+                                                
+                
                 <Component class="javax.swing.JLabel" name="jLabel14">
+                                                      
+                  
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                            
+                    
+                    <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                                                                  
+                      
                       <Font name="Segoe UI" size="13" style="1"/>
+                                                                
+                    
                     </Property>
+                                                            
+                    
                     <Property name="text" type="java.lang.String" value="Kategori:"/>
+                                                          
+                  
                   </Properties>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="130" width="100" height="25"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="80" x="16" y="104"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
+                                                    
+                
                 </Component>
+                                                
+                
                 <Component class="javax.swing.JComboBox" name="cbMenuKategori">
+                                                      
+                  
                   <Properties>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                                                            
+                    
+                    <Property editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor" name="model" type="javax.swing.ComboBoxModel">
+                                                                  
+                      
                       <StringArray count="4">
+                                                                        
+                        
                         <StringItem index="0" value=""/>
+                                                                        
+                        
                         <StringItem index="1" value=""/>
+                                                                        
+                        
                         <StringItem index="2" value=""/>
+                                                                        
+                        
                         <StringItem index="3" value=""/>
+                                                                      
+                      
                       </StringArray>
+                                                                
+                    
                     </Property>
+                                                          
+                  
                   </Properties>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="130" y="130" width="340" height="25"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="272" x="104" y="104"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
+                                                    
+                
                 </Component>
+                                                
+                
                 <Component class="javax.swing.JLabel" name="jLabel15">
+                                                      
+                  
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                            
+                    
+                    <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                                                                  
+                      
                       <Font name="Segoe UI" size="13" style="1"/>
+                                                                
+                    
                     </Property>
+                                                            
+                    
                     <Property name="text" type="java.lang.String" value="Harga (Rp):"/>
+                                                          
+                  
                   </Properties>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="175" width="100" height="25"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="80" x="16" y="140"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
+                                                    
+                
                 </Component>
+                                                
+                
                 <Component class="javax.swing.JTextField" name="txtMenuHarga">
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="130" y="175" width="340" height="25"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="272" x="104" y="140"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
+                                                    
+                
                 </Component>
+                                                
+                
                 <Container class="javax.swing.JPanel" name="buttonPanel">
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="240" width="450" height="90"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="72" width="360" x="16" y="192"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
-
+                                                      
+                  
                   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                                                            
+                    
                     <Property name="columns" type="int" value="2"/>
+                                                            
+                    
                     <Property name="rows" type="int" value="2"/>
+                                                          
+                  
                   </Layout>
+                                                      
+                  
                   <SubComponents>
+                                                            
+                    
                     <Component class="javax.swing.JButton" name="btnInsert">
+                                                                  
+                      
                       <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Segoe UI" size="12" style="1"/>
-                        </Property>
+                                                                        
+                        
+                        
                         <Property name="text" type="java.lang.String" value="INSERT"/>
+                                                                      
+                        
+                        
+                        
+                      
+                        <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="background" type="java.awt.Color">
+                          <Color blue="32" green="7d" red="2e" type="rgb"/>
+                        </Property>
+                        <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="foreground" type="java.awt.Color">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
+                        <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                          <Font name="Segoe UI" size="12" style="1"/>
+                        </Property>
                       </Properties>
+                                                                  
+                      
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInsertActionPerformed"/>
+                                                                        
+                        
+                        <EventHandler event="actionPerformed" handler="btnInsertActionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent"/>
+                                                                      
+                      
                       </Events>
+                                                                
+                    
                     </Component>
+                                                            
+                    
                     <Component class="javax.swing.JButton" name="btnUpdate">
+                                                                  
+                      
                       <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Segoe UI" size="12" style="1"/>
-                        </Property>
+                                                                        
+                        
+                        
                         <Property name="text" type="java.lang.String" value="UPDATE"/>
+                                                                      
+                        
+                        
+                        
+                      
+                        <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="background" type="java.awt.Color">
+                          <Color blue="c0" green="65" red="15" type="rgb"/>
+                        </Property>
+                        <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="foreground" type="java.awt.Color">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
+                        <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                          <Font name="Segoe UI" size="12" style="1"/>
+                        </Property>
                       </Properties>
+                                                                  
+                      
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUpdateActionPerformed"/>
+                                                                        
+                        
+                        <EventHandler event="actionPerformed" handler="btnUpdateActionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent"/>
+                                                                      
+                      
                       </Events>
+                                                                
+                    
                     </Component>
+                                                            
+                    
                     <Component class="javax.swing.JButton" name="btnDelete">
+                                                                  
+                      
                       <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Segoe UI" size="12" style="1"/>
-                        </Property>
+                                                                        
+                        
+                        
                         <Property name="text" type="java.lang.String" value="DELETE"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeleteActionPerformed"/>
-                      </Events>
-                    </Component>
-                    <Component class="javax.swing.JButton" name="btnCancel">
-                      <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                                      
+                        
+                        
+                        
+                      
+                        <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="background" type="java.awt.Color">
+                          <Color blue="28" green="28" red="c6" type="rgb"/>
+                        </Property>
+                        <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="foreground" type="java.awt.Color">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
+                        <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
                           <Font name="Segoe UI" size="12" style="1"/>
                         </Property>
+                      </Properties>
+                                                                  
+                      
+                      <Events>
+                                                                        
+                        
+                        <EventHandler event="actionPerformed" handler="btnDeleteActionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent"/>
+                                                                      
+                      
+                      </Events>
+                                                                
+                    
+                    </Component>
+                                                            
+                    
+                    <Component class="javax.swing.JButton" name="btnCancel">
+                                                                  
+                      
+                      <Properties>
+                                                                        
+                        
+                        
                         <Property name="text" type="java.lang.String" value="CANCEL"/>
+                                                                      
+                        
+                        
+                        
+                      
+                        <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="background" type="java.awt.Color">
+                          <Color blue="75" green="75" red="75" type="rgb"/>
+                        </Property>
+                        <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="foreground" type="java.awt.Color">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
+                        <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                          <Font name="Segoe UI" size="12" style="1"/>
+                        </Property>
                       </Properties>
+                                                                  
+                      
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCancelActionPerformed"/>
+                                                                        
+                        
+                        <EventHandler event="actionPerformed" handler="btnCancelActionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent"/>
+                                                                      
+                      
                       </Events>
+                                                                
+                    
                     </Component>
+                                                          
+                  
                   </SubComponents>
+                                                    
+                
                 </Container>
+                                              
+              
               </SubComponents>
+                                        
+            
             </Container>
+                                    
+            
             <Container class="javax.swing.JPanel" name="panelTableMenu">
+                                          
+              
               <Properties>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                                
+                
+                <Property editor="org.netbeans.modules.form.editors2.BorderEditor" name="border" type="javax.swing.border.Border">
+                                                      
+                  
                   <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                                                            
+                    
                     <TitledBorder title="Daftar Data Menu"/>
+                                                          
+                  
                   </Border>
+                                                    
+                
                 </Property>
+                                              
+              
               </Properties>
+                                          
+              
               <Constraints>
+                                                
+                
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="530" y="15" width="590" height="600"/>
+                                                      
+                  
+                  <AbsoluteConstraints height="480" width="472" x="424" y="12"/>
+                                                    
+                
                 </Constraint>
+                                              
+              
               </Constraints>
-
+                                          
+              
               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                                                
+                
                 <Property name="useNullLayout" type="boolean" value="true"/>
+                                              
+              
               </Layout>
+                                          
+              
               <SubComponents>
+                                                
+                
                 <Container class="javax.swing.JScrollPane" name="jScrollPaneMenu">
+                                                      
+                  
                   <AuxValues>
+                                                            
+                    
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                                                          
+                  
                   </AuxValues>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="30" width="550" height="550"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="440" width="440" x="16" y="24"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
-
+                                                      
+                  
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                                                      
+                  
                   <SubComponents>
+                                                            
+                    
                     <Component class="javax.swing.JTable" name="tabelMenu">
+                                                                  
+                      
                       <Properties>
-                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                                                                        
+                        
+                        <Property editor="org.netbeans.modules.form.editors2.TableModelEditor" name="model" type="javax.swing.table.TableModel">
+                                                                              
+                          
                           <Table columnCount="4" rowCount="0">
+                                                                                    
+                            
                             <Column editable="false" title="Kode Menu" type="java.lang.Object"/>
+                                                                                    
+                            
                             <Column editable="false" title="Nama Menu" type="java.lang.Object"/>
+                                                                                    
+                            
                             <Column editable="false" title="Kategori" type="java.lang.Object"/>
+                                                                                    
+                            
                             <Column editable="false" title="Harga" type="java.lang.Object"/>
+                                                                                  
+                          
                           </Table>
+                                                                            
+                        
                         </Property>
+                                                                        
+                        
                         <Property name="rowHeight" type="int" value="25"/>
+                                                                      
+                      
                       </Properties>
+                                                                  
+                      
                       <Events>
-                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tabelMenuMouseClicked"/>
+                                                                        
+                        
+                        <EventHandler event="mouseClicked" handler="tabelMenuMouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent"/>
+                                                                      
+                      
                       </Events>
+                                                                
+                    
                     </Component>
+                                                          
+                  
                   </SubComponents>
+                                                    
+                
                 </Container>
+                                              
+              
               </SubComponents>
+                                        
+            
             </Container>
+                                  
+          
           </SubComponents>
+                            
+        
         </Container>
+                        
+        
         <Container class="javax.swing.JPanel" name="panelPosTab">
+                              
+          
+          <Properties>
+                                    
+            
+            <Property editor="org.netbeans.beaninfo.editors.DimensionEditor" name="maximumSize" type="java.awt.Dimension">
+                                          
+              
+              <Dimension value="[1000, 600]"/>
+                                        
+            
+            </Property>
+                                  
+          
+          </Properties>
+                              
+          
           <Constraints>
+                                    
+            
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                                          
+              
               <JTabbedPaneConstraints tabName="Transaksi Penjualan (POS)">
+                                                
+                
                 <Property name="tabTitle" type="java.lang.String" value="Transaksi Penjualan (POS)"/>
+                                              
+              
               </JTabbedPaneConstraints>
+                                        
+            
             </Constraint>
+                                  
+          
           </Constraints>
-
+                              
+          
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                                    
+            
             <Property name="useNullLayout" type="boolean" value="true"/>
+                                  
+          
           </Layout>
+                              
+          
           <SubComponents>
+                                    
+            
             <Container class="javax.swing.JPanel" name="leftPosPanel">
+                                          
+              
               <Properties>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                                
+                
+                <Property editor="org.netbeans.modules.form.editors2.BorderEditor" name="border" type="javax.swing.border.Border">
+                                                      
+                  
                   <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                                                            
+                    
                     <TitledBorder title="Pilih Menu"/>
+                                                          
+                  
                   </Border>
+                                                    
+                
                 </Property>
+                                              
+              
               </Properties>
+                                          
+              
               <Constraints>
+                                                
+                
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="15" y="15" width="550" height="600"/>
+                                                      
+                  
+                  <AbsoluteConstraints height="480" width="440" x="12" y="12"/>
+                                                    
+                
                 </Constraint>
+                                              
+              
               </Constraints>
-
+                                          
+              
               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                                                
+                
                 <Property name="useNullLayout" type="boolean" value="true"/>
+                                              
+              
               </Layout>
+                                          
+              
               <SubComponents>
+                                                
+                
                 <Component class="javax.swing.JLabel" name="jLabel2">
+                                                      
+                  
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                            
+                    
+                    <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                                                                  
+                      
                       <Font name="Segoe UI" size="12" style="1"/>
+                                                                
+                    
                     </Property>
+                                                            
+                    
                     <Property name="text" type="java.lang.String" value="Cari Menu:"/>
+                                                          
+                  
                   </Properties>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="30" width="80" height="25"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="64" x="16" y="24"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
+                                                    
+                
                 </Component>
+                                                
+                
                 <Component class="javax.swing.JTextField" name="txtSearchMenu">
+                                                      
+                  
                   <Events>
-                    <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtSearchMenuKeyReleased"/>
+                                                            
+                    
+                    <EventHandler event="keyReleased" handler="txtSearchMenuKeyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent"/>
+                                                          
+                  
                   </Events>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="110" y="30" width="420" height="25"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="336" x="88" y="24"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
+                                                    
+                
                 </Component>
+                                                
+                
                 <Container class="javax.swing.JPanel" name="categoryPanel">
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="65" width="510" height="30"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="24" width="408" x="16" y="52"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
-
+                                                      
+                  
                   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                                                            
+                    
                     <Property name="columns" type="int" value="5"/>
+                                                            
+                    
                     <Property name="rows" type="int" value="1"/>
+                                                          
+                  
                   </Layout>
+                                                      
+                  
                   <SubComponents>
+                                                            
+                    
                     <Component class="javax.swing.JButton" name="btnAll">
+                                                                  
+                      
                       <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                                        
+                        
+                        <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                                                                              
+                          
                           <Font name="Segoe UI" size="11" style="1"/>
+                                                                            
+                        
                         </Property>
+                                                                        
+                        
                         <Property name="text" type="java.lang.String" value="Semua"/>
+                                                                      
+                      
                       </Properties>
+                                                                  
+                      
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAllActionPerformed"/>
+                                                                        
+                        
+                        <EventHandler event="actionPerformed" handler="btnAllActionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent"/>
+                                                                      
+                      
                       </Events>
+                                                                
+                    
                     </Component>
+                                                            
+                    
                     <Component class="javax.swing.JButton" name="btnCoffee">
+                                                                  
+                      
                       <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                                        
+                        
+                        <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                                                                              
+                          
                           <Font name="Segoe UI" size="11" style="1"/>
+                                                                            
+                        
                         </Property>
+                                                                        
+                        
                         <Property name="text" type="java.lang.String" value="Coffee"/>
+                                                                      
+                      
                       </Properties>
+                                                                  
+                      
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCoffeeActionPerformed"/>
+                                                                        
+                        
+                        <EventHandler event="actionPerformed" handler="btnCoffeeActionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent"/>
+                                                                      
+                      
                       </Events>
+                                                                
+                    
                     </Component>
+                                                            
+                    
                     <Component class="javax.swing.JButton" name="btnNonCoffee">
+                                                                  
+                      
                       <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                                        
+                        
+                        <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                                                                              
+                          
                           <Font name="Segoe UI" size="11" style="1"/>
+                                                                            
+                        
                         </Property>
+                                                                        
+                        
                         <Property name="text" type="java.lang.String" value="Non-Coffee"/>
+                                                                      
+                      
                       </Properties>
+                                                                  
+                      
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNonCoffeeActionPerformed"/>
+                                                                        
+                        
+                        <EventHandler event="actionPerformed" handler="btnNonCoffeeActionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent"/>
+                                                                      
+                      
                       </Events>
+                                                                
+                    
                     </Component>
+                                                            
+                    
                     <Component class="javax.swing.JButton" name="btnFood">
+                                                                  
+                      
                       <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                                        
+                        
+                        <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                                                                              
+                          
                           <Font name="Segoe UI" size="11" style="1"/>
+                                                                            
+                        
                         </Property>
+                                                                        
+                        
                         <Property name="text" type="java.lang.String" value="Food"/>
+                                                                      
+                      
                       </Properties>
+                                                                  
+                      
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFoodActionPerformed"/>
+                                                                        
+                        
+                        <EventHandler event="actionPerformed" handler="btnFoodActionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent"/>
+                                                                      
+                      
                       </Events>
+                                                                
+                    
                     </Component>
+                                                            
+                    
                     <Component class="javax.swing.JButton" name="btnDessert">
+                                                                  
+                      
                       <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                                        
+                        
+                        <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                                                                              
+                          
                           <Font name="Segoe UI" size="11" style="1"/>
+                                                                            
+                        
                         </Property>
+                                                                        
+                        
                         <Property name="text" type="java.lang.String" value="Dessert"/>
+                                                                      
+                      
                       </Properties>
+                                                                  
+                      
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDessertActionPerformed"/>
+                                                                        
+                        
+                        <EventHandler event="actionPerformed" handler="btnDessertActionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent"/>
+                                                                      
+                      
                       </Events>
+                                                                
+                    
                     </Component>
+                                                          
+                  
                   </SubComponents>
+                                                    
+                
                 </Container>
+                                                
+                
                 <Container class="javax.swing.JScrollPane" name="jScrollPanePosMenu">
+                                                      
+                  
                   <AuxValues>
+                                                            
+                    
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                                                          
+                  
                   </AuxValues>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="110" width="510" height="420"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="336" width="408" x="16" y="88"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
-
+                                                      
+                  
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                                                      
+                  
                   <SubComponents>
+                                                            
+                    
                     <Component class="javax.swing.JTable" name="tabelPosMenu">
+                                                                  
+                      
                       <Properties>
-                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                                                                        
+                        
+                        <Property editor="org.netbeans.modules.form.editors2.TableModelEditor" name="model" type="javax.swing.table.TableModel">
+                                                                              
+                          
                           <Table columnCount="4" rowCount="0">
+                                                                                    
+                            
                             <Column editable="false" title="Kode Menu" type="java.lang.Object"/>
+                                                                                    
+                            
                             <Column editable="false" title="Nama Menu" type="java.lang.Object"/>
+                                                                                    
+                            
                             <Column editable="false" title="Kategori" type="java.lang.Object"/>
+                                                                                    
+                            
                             <Column editable="false" title="Harga" type="java.lang.Object"/>
+                                                                                  
+                          
                           </Table>
+                                                                            
+                        
                         </Property>
+                                                                        
+                        
                         <Property name="rowHeight" type="int" value="25"/>
+                                                                      
+                      
                       </Properties>
+                                                                
+                    
                     </Component>
+                                                          
+                  
                   </SubComponents>
+                                                    
+                
                 </Container>
+                                                
+                
                 <Component class="javax.swing.JButton" name="btnAddToCart">
+                                                      
+                  
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="46" green="52" red="78" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="14" style="1"/>
-                    </Property>
+                                                            
+                    
+                    
+                    
                     <Property name="text" type="java.lang.String" value="Tambah ke Keranjang"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddToCartActionPerformed"/>
-                  </Events>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="545" width="510" height="40"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-              </SubComponents>
-            </Container>
-            <Container class="javax.swing.JPanel" name="rightPosPanel">
-              <Properties>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                    <TitledBorder title="Keranjang Transaksi"/>
-                  </Border>
-                </Property>
-              </Properties>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="580" y="15" width="540" height="600"/>
-                </Constraint>
-              </Constraints>
-
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-                <Property name="useNullLayout" type="boolean" value="true"/>
-              </Layout>
-              <SubComponents>
-                <Container class="javax.swing.JScrollPane" name="jScrollPaneCart">
-                  <AuxValues>
-                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                  </AuxValues>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="30" width="500" height="230"/>
-                    </Constraint>
-                  </Constraints>
-
-                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                  <SubComponents>
-                    <Component class="javax.swing.JTable" name="tabelCart">
-                      <Properties>
-                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                          <Table columnCount="5" rowCount="0">
-                            <Column editable="false" title="Kode" type="java.lang.Object"/>
-                            <Column editable="false" title="Nama Menu" type="java.lang.Object"/>
-                            <Column editable="false" title="Harga" type="java.lang.Object"/>
-                            <Column editable="false" title="Jumlah" type="java.lang.Object"/>
-                            <Column editable="false" title="Subtotal" type="java.lang.Object"/>
-                          </Table>
-                        </Property>
-                        <Property name="rowHeight" type="int" value="25"/>
-                      </Properties>
-                    </Component>
-                  </SubComponents>
-                </Container>
-                <Component class="javax.swing.JLabel" name="jLabel7">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="13" style="1"/>
+                                                          
+                    
+                    
+                    
+                  
+                    <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="background" type="java.awt.Color">
+                      <Color blue="35" green="39" red="62" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Nama Pelanggan:"/>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="280" width="120" height="25"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JTextField" name="txtCustName">
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="150" y="280" width="370" height="25"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel8">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="13" style="1"/>
+                    <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="foreground" type="java.awt.Color">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Bayar Tunai (Rp):"/>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="315" width="120" height="25"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JTextField" name="txtCashReceived">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                    <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
                       <Font name="Segoe UI" size="14" style="1"/>
                     </Property>
                   </Properties>
+                                                      
+                  
                   <Events>
-                    <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtCashReceivedKeyReleased"/>
+                                                            
+                    
+                    <EventHandler event="actionPerformed" handler="btnAddToCartActionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent"/>
+                                                          
+                  
                   </Events>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="150" y="315" width="370" height="25"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="32" width="408" x="16" y="436"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
+                                                    
+                
                 </Component>
-                <Container class="javax.swing.JPanel" name="totalDisplayPanel">
+                                              
+              
+              </SubComponents>
+                                        
+            
+            </Container>
+                                    
+            
+            <Container class="javax.swing.JPanel" name="rightPosPanel">
+                                          
+              
+              <Properties>
+                                                
+                
+                <Property editor="org.netbeans.modules.form.editors2.BorderEditor" name="border" type="javax.swing.border.Border">
+                                                      
+                  
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                                                            
+                    
+                    <TitledBorder title="Keranjang Transaksi"/>
+                                                          
+                  
+                  </Border>
+                                                    
+                
+                </Property>
+                                              
+              
+              </Properties>
+                                          
+              
+              <Constraints>
+                                                
+                
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                                      
+                  
+                  <AbsoluteConstraints height="480" width="432" x="464" y="12"/>
+                                                    
+                
+                </Constraint>
+                                              
+              
+              </Constraints>
+                                          
+              
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                                                
+                
+                <Property name="useNullLayout" type="boolean" value="true"/>
+                                              
+              
+              </Layout>
+                                          
+              
+              <SubComponents>
+                                                
+                
+                <Container class="javax.swing.JScrollPane" name="jScrollPaneCart">
+                                                      
+                  
+                  <AuxValues>
+                                                            
+                    
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                                                          
+                  
+                  </AuxValues>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="355" width="500" height="80"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="184" width="400" x="16" y="24"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
-
-                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-                    <Property name="useNullLayout" type="boolean" value="true"/>
-                  </Layout>
+                                                      
+                  
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                                                      
+                  
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel9">
+                                                            
+                    
+                    <Component class="javax.swing.JTable" name="tabelCart">
+                                                                  
+                      
                       <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Segoe UI" size="13" style="1"/>
+                                                                        
+                        
+                        <Property editor="org.netbeans.modules.form.editors2.TableModelEditor" name="model" type="javax.swing.table.TableModel">
+                                                                              
+                          
+                          <Table columnCount="5" rowCount="0">
+                                                                                    
+                            
+                            <Column editable="false" title="Kode" type="java.lang.Object"/>
+                                                                                    
+                            
+                            <Column editable="false" title="Nama Menu" type="java.lang.Object"/>
+                                                                                    
+                            
+                            <Column editable="false" title="Harga" type="java.lang.Object"/>
+                                                                                    
+                            
+                            <Column editable="false" title="Jumlah" type="java.lang.Object"/>
+                                                                                    
+                            
+                            <Column editable="false" title="Subtotal" type="java.lang.Object"/>
+                                                                                  
+                          
+                          </Table>
+                                                                            
+                        
                         </Property>
-                        <Property name="text" type="java.lang.String" value="TOTAL TAGIHAN :"/>
+                                                                        
+                        
+                        <Property name="rowHeight" type="int" value="25"/>
+                                                                      
+                      
                       </Properties>
-                      <Constraints>
-                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="10" y="5" width="200" height="20"/>
-                        </Constraint>
-                      </Constraints>
+                                                                
+                    
                     </Component>
-                    <Component class="javax.swing.JLabel" name="lblTotalHarga">
+                                                          
+                  
+                  </SubComponents>
+                                                    
+                
+                </Container>
+                                                
+                
+                <Component class="javax.swing.JLabel" name="jLabel7">
+                                                      
+                  
+                  <Properties>
+                                                            
+                    
+                    <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                                                                  
+                      
+                      <Font name="Segoe UI" size="13" style="1"/>
+                                                                
+                    
+                    </Property>
+                                                            
+                    
+                    <Property name="text" type="java.lang.String" value="Nama Pelanggan:"/>
+                                                          
+                  
+                  </Properties>
+                                                      
+                  
+                  <Constraints>
+                                                            
+                    
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="96" x="16" y="224"/>
+                                                                
+                    
+                    </Constraint>
+                                                          
+                  
+                  </Constraints>
+                                                    
+                
+                </Component>
+                                                
+                
+                <Component class="javax.swing.JTextField" name="txtCustName">
+                                                      
+                  
+                  <Constraints>
+                                                            
+                    
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="296" x="120" y="224"/>
+                                                                
+                    
+                    </Constraint>
+                                                          
+                  
+                  </Constraints>
+                                                    
+                
+                </Component>
+                                                
+                
+                <Component class="javax.swing.JLabel" name="jLabel8">
+                                                      
+                  
+                  <Properties>
+                                                            
+                    
+                    <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                                                                  
+                      
+                      <Font name="Segoe UI" size="13" style="1"/>
+                                                                
+                    
+                    </Property>
+                                                            
+                    
+                    <Property name="text" type="java.lang.String" value="Bayar Tunai (Rp):"/>
+                                                          
+                  
+                  </Properties>
+                                                      
+                  
+                  <Constraints>
+                                                            
+                    
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="96" x="16" y="252"/>
+                                                                
+                    
+                    </Constraint>
+                                                          
+                  
+                  </Constraints>
+                                                    
+                
+                </Component>
+                                                
+                
+                <Component class="javax.swing.JTextField" name="txtCashReceived">
+                                                      
+                  
+                  <Properties>
+                                                            
+                    
+                    <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                                                                  
+                      
+                      <Font name="Segoe UI" size="14" style="1"/>
+                                                                
+                    
+                    </Property>
+                                                          
+                  
+                  </Properties>
+                                                      
+                  
+                  <Events>
+                                                            
+                    
+                    <EventHandler event="keyReleased" handler="txtCashReceivedKeyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent"/>
+                                                          
+                  
+                  </Events>
+                                                      
+                  
+                  <Constraints>
+                                                            
+                    
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="296" x="120" y="252"/>
+                                                                
+                    
+                    </Constraint>
+                                                          
+                  
+                  </Constraints>
+                                                    
+                
+                </Component>
+                                                
+                
+                <Container class="javax.swing.JPanel" name="totalDisplayPanel">
+                                                      
+                  
+                  <Constraints>
+                                                            
+                    
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                                                  
+                      
+                      <AbsoluteConstraints height="64" width="400" x="16" y="284"/>
+                                                                
+                    
+                    </Constraint>
+                                                          
+                  
+                  </Constraints>
+                                                      
+                  
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                                                            
+                    
+                    <Property name="useNullLayout" type="boolean" value="true"/>
+                                                          
+                  
+                  </Layout>
+                                                      
+                  
+                  <SubComponents>
+                                                            
+                    
+                    <Component class="javax.swing.JLabel" name="jLabel9">
+                                                                  
+                      
                       <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                                        
+                        
+                        <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                                                                              
+                          
+                          <Font name="Segoe UI" size="13" style="1"/>
+                                                                            
+                        
+                        </Property>
+                                                                        
+                        
+                        <Property name="text" type="java.lang.String" value="TOTAL TAGIHAN :"/>
+                                                                      
+                        
+                      
+                        <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="background" type="java.awt.Color">
+                          <Color blue="15" green="16" red="21" type="rgb"/>
+                        </Property>
+                      </Properties>
+                                                                  
+                      
+                      <Constraints>
+                                                                        
+                        
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                                                              
+                          
+                          <AbsoluteConstraints height="16" width="160" x="8" y="4"/>
+                                                                            
+                        
+                        </Constraint>
+                                                                      
+                      
+                      </Constraints>
+                                                                
+                    
+                    </Component>
+                                                            
+                    
+                    <Component class="javax.swing.JLabel" name="lblTotalHarga">
+                                                                  
+                      
+                      <Properties>
+                                                                        
+                        
+                        
+                        <Property name="horizontalAlignment" type="int" value="4"/>
+                                                                        
+                        
+                        <Property name="text" type="java.lang.String" value="Rp 0,00"/>
+                                                                      
+                        
+                        
+                      
+                        <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="foreground" type="java.awt.Color">
+                          <Color blue="0" green="b3" red="ff" type="rgb"/>
+                        </Property>
+                        <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
                           <Font name="Segoe UI" size="30" style="1"/>
                         </Property>
-                        <Property name="horizontalAlignment" type="int" value="4"/>
-                        <Property name="text" type="java.lang.String" value="Rp 0,00"/>
                       </Properties>
+                                                                  
+                      
                       <Constraints>
+                                                                        
+                        
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="10" y="25" width="480" height="45"/>
+                                                                              
+                          
+                          <AbsoluteConstraints height="36" width="384" x="8" y="20"/>
+                                                                            
+                        
                         </Constraint>
+                                                                      
+                      
                       </Constraints>
+                                                                
+                    
                     </Component>
+                                                          
+                  
                   </SubComponents>
+                                                    
+                
                 </Container>
+                                                
+                
                 <Component class="javax.swing.JLabel" name="jLabel10">
+                                                      
+                  
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                            
+                    
+                    <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                                                                  
+                      
                       <Font name="Segoe UI" size="13" style="1"/>
+                                                                
+                    
                     </Property>
+                                                            
+                    
                     <Property name="text" type="java.lang.String" value="Kembalian:"/>
+                                                          
+                  
                   </Properties>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="450" width="120" height="25"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="96" x="16" y="360"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
+                                                    
+                
                 </Component>
+                                                
+                
                 <Component class="javax.swing.JLabel" name="lblChange">
+                                                      
+                  
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                            
+                    
+                    
+                    <Property name="horizontalAlignment" type="int" value="4"/>
+                                                            
+                    
+                    <Property name="text" type="java.lang.String" value="Rp 0,00"/>
+                                                          
+                    
+                    
+                  
+                    <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="foreground" type="java.awt.Color">
+                      <Color blue="50" green="af" red="4c" type="rgb"/>
+                    </Property>
+                    <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
                       <Font name="Segoe UI" size="18" style="1"/>
                     </Property>
-                    <Property name="horizontalAlignment" type="int" value="4"/>
-                    <Property name="text" type="java.lang.String" value="Rp 0,00"/>
                   </Properties>
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="150" y="450" width="370" height="25"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="20" width="296" x="120" y="360"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
+                                                    
+                
                 </Component>
+                                                
+                
                 <Container class="javax.swing.JPanel" name="actionBtnPanel">
+                                                      
+                  
                   <Constraints>
+                                                            
+                    
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="490" width="500" height="45"/>
+                                                                  
+                      
+                      <AbsoluteConstraints height="36" width="400" x="16" y="392"/>
+                                                                
+                    
                     </Constraint>
+                                                          
+                  
                   </Constraints>
-
+                                                      
+                  
                   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                                                            
+                    
                     <Property name="columns" type="int" value="3"/>
+                                                            
+                    
                     <Property name="rows" type="int" value="1"/>
+                                                          
+                  
                   </Layout>
+                                                      
+                  
                   <SubComponents>
+                                                            
+                    
                     <Component class="javax.swing.JButton" name="btnRemoveFromCart">
+                                                                  
+                      
                       <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Segoe UI" size="12" style="1"/>
-                        </Property>
+                                                                        
+                        
+                        
                         <Property name="text" type="java.lang.String" value="Hapus Item"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRemoveFromCartActionPerformed"/>
-                      </Events>
-                    </Component>
-                    <Component class="javax.swing.JButton" name="btnClearOrder">
-                      <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                                      
+                        
+                        
+                        
+                      
+                        <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="background" type="java.awt.Color">
+                          <Color blue="28" green="28" red="c6" type="rgb"/>
+                        </Property>
+                        <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="foreground" type="java.awt.Color">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
+                        <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
                           <Font name="Segoe UI" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Reset"/>
                       </Properties>
+                                                                  
+                      
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnClearOrderActionPerformed"/>
+                                                                        
+                        
+                        <EventHandler event="actionPerformed" handler="btnRemoveFromCartActionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent"/>
+                                                                      
+                      
                       </Events>
+                                                                
+                    
                     </Component>
-                    <Component class="javax.swing.JButton" name="btnCheckout">
+                                                            
+                    
+                    <Component class="javax.swing.JButton" name="btnClearOrder">
+                                                                  
+                      
                       <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                                        
+                        
+                        
+                        <Property name="text" type="java.lang.String" value="Reset"/>
+                                                                      
+                        
+                        
+                        
+                      
+                        <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="background" type="java.awt.Color">
+                          <Color blue="75" green="75" red="75" type="rgb"/>
+                        </Property>
+                        <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="foreground" type="java.awt.Color">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
+                        <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
+                          <Font name="Segoe UI" size="12" style="1"/>
+                        </Property>
+                      </Properties>
+                                                                  
+                      
+                      <Events>
+                                                                        
+                        
+                        <EventHandler event="actionPerformed" handler="btnClearOrderActionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent"/>
+                                                                      
+                      
+                      </Events>
+                                                                
+                    
+                    </Component>
+                                                            
+                    
+                    <Component class="javax.swing.JButton" name="btnCheckout">
+                                                                  
+                      
+                      <Properties>
+                                                                        
+                        
+                        
+                        <Property name="text" type="java.lang.String" value="Checkout"/>
+                                                                      
+                        
+                        
+                        
+                      
+                        <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="background" type="java.awt.Color">
+                          <Color blue="32" green="7d" red="2e" type="rgb"/>
+                        </Property>
+                        <Property editor="org.netbeans.beaninfo.editors.ColorEditor" name="foreground" type="java.awt.Color">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
+                        <Property editor="org.netbeans.beaninfo.editors.FontEditor" name="font" type="java.awt.Font">
                           <Font name="Segoe UI" size="14" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Checkout"/>
                       </Properties>
+                                                                  
+                      
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCheckoutActionPerformed"/>
+                                                                        
+                        
+                        <EventHandler event="actionPerformed" handler="btnCheckoutActionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent"/>
+                                                                      
+                      
                       </Events>
+                                                                
+                    
                     </Component>
+                                                          
+                  
                   </SubComponents>
+                                                    
+                
                 </Container>
+                                              
+              
               </SubComponents>
+                                        
+            
             </Container>
+                                  
+          
           </SubComponents>
+                            
+        
         </Container>
+                      
+      
       </SubComponents>
+                
+    
     </Container>
+          
+  
   </SubComponents>
+    
+
 </Form>

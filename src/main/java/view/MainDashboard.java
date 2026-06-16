@@ -22,6 +22,8 @@ public class MainDashboard extends javax.swing.JFrame {
     public MainDashboard() {
         initComponents();
         setupCustomStyle();
+        pack();
+        setLocationRelativeTo(null);
         
         // Initialize controllers
         menuController = new MenuController(this);
@@ -35,6 +37,12 @@ public class MainDashboard extends javax.swing.JFrame {
     }
 
     private void setupCustomStyle() {
+        // Adjust panel preferred sizes to ensure all components fit when packed
+        java.awt.Dimension preferredTabSize = new java.awt.Dimension(908, 504);
+        panelHistoryTab.setPreferredSize(preferredTabSize);
+        panelMenuTab.setPreferredSize(preferredTabSize);
+        panelPosTab.setPreferredSize(preferredTabSize);
+
         // 1. Populate Category ComboBox with standard items (previously it was empty)
         cbMenuKategori.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {
             "Coffee", "Non-Coffee", "Food", "Dessert"
@@ -70,58 +78,49 @@ public class MainDashboard extends javax.swing.JFrame {
         // 4. POS tab button styling
         javax.swing.JButton[] posCategoryButtons = { btnAll, btnCoffee, btnNonCoffee, btnFood, btnDessert };
         for (javax.swing.JButton btn : posCategoryButtons) {
-            btn.putClientProperty("JButton.buttonType", "roundRect");
             btn.setFocusPainted(false);
         }
 
         // 5. Functional action buttons styling with premium accent colors
-        btnAddToCart.setBackground(new java.awt.Color(98, 57, 53)); // Coffee Theme
+        btnAddToCart.setBackground(new java.awt.Color(98, 57, 53));
+        btnAddToCart.setForeground(java.awt.Color.WHITE); // Coffee Theme
         btnAddToCart.setForeground(java.awt.Color.WHITE);
-        btnAddToCart.putClientProperty("JButton.buttonType", "roundRect");
         btnAddToCart.setFocusPainted(false);
 
         btnCheckout.setBackground(new java.awt.Color(46, 125, 50)); // Forest Green
         btnCheckout.setForeground(java.awt.Color.WHITE);
-        btnCheckout.putClientProperty("JButton.buttonType", "roundRect");
         btnCheckout.setFont(new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 14));
         btnCheckout.setFocusPainted(false);
 
         btnRemoveFromCart.setBackground(new java.awt.Color(198, 40, 40)); // Red warning
         btnRemoveFromCart.setForeground(java.awt.Color.WHITE);
-        btnRemoveFromCart.putClientProperty("JButton.buttonType", "roundRect");
         btnRemoveFromCart.setFocusPainted(false);
 
         btnClearOrder.setBackground(new java.awt.Color(117, 117, 117)); // Reset gray
         btnClearOrder.setForeground(java.awt.Color.WHITE);
-        btnClearOrder.putClientProperty("JButton.buttonType", "roundRect");
         btnClearOrder.setFocusPainted(false);
 
         // History tab buttons
         btnVoid.setBackground(new java.awt.Color(198, 40, 40)); // Warning Red
         btnVoid.setForeground(java.awt.Color.WHITE);
-        btnVoid.putClientProperty("JButton.buttonType", "roundRect");
         btnVoid.setFont(new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 13));
         btnVoid.setFocusPainted(false);
 
         // Menu Management tab buttons
         btnInsert.setBackground(new java.awt.Color(46, 125, 50)); // Green
         btnInsert.setForeground(java.awt.Color.WHITE);
-        btnInsert.putClientProperty("JButton.buttonType", "roundRect");
         btnInsert.setFocusPainted(false);
 
         btnUpdate.setBackground(new java.awt.Color(21, 101, 192)); // Blue
         btnUpdate.setForeground(java.awt.Color.WHITE);
-        btnUpdate.putClientProperty("JButton.buttonType", "roundRect");
         btnUpdate.setFocusPainted(false);
 
         btnDelete.setBackground(new java.awt.Color(198, 40, 40)); // Red
         btnDelete.setForeground(java.awt.Color.WHITE);
-        btnDelete.putClientProperty("JButton.buttonType", "roundRect");
         btnDelete.setFocusPainted(false);
 
         btnCancel.setBackground(new java.awt.Color(117, 117, 117)); // Gray
         btnCancel.setForeground(java.awt.Color.WHITE);
-        btnCancel.putClientProperty("JButton.buttonType", "roundRect");
         btnCancel.setFocusPainted(false);
 
         // 6. Style POS Total display to look like a digital LED receipt screen
@@ -136,9 +135,7 @@ public class MainDashboard extends javax.swing.JFrame {
         lblHistoryTotal.setForeground(new java.awt.Color(255, 179, 0)); // matching history total
         lblHistoryTotal.setFont(new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 20));
 
-        // 7. Polish Header styling
-        lblTitle.setForeground(java.awt.Color.WHITE);
-        lblSubtitle.setForeground(new java.awt.Color(224, 224, 224));
+        // 7. Polish Header styling (Removed as headerPanel was deleted in NetBeans)
     }
 
     /**
@@ -150,9 +147,6 @@ public class MainDashboard extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        headerPanel = new javax.swing.JPanel();
-        lblTitle = new javax.swing.JLabel();
-        lblSubtitle = new javax.swing.JLabel();
         tabbedPane = new javax.swing.JTabbedPane();
         panelHistoryTab = new javax.swing.JPanel();
         leftHistoryPanel = new javax.swing.JPanel();
@@ -215,23 +209,6 @@ public class MainDashboard extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Form Coffee Shop Management");
 
-        headerPanel.setBackground(new java.awt.Color(98, 57, 53));
-        headerPanel.setPreferredSize(new java.awt.Dimension(1150, 70));
-        headerPanel.setLayout(null);
-
-        lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 22)); // NOI18N
-        lblTitle.setText("☕ CAFE ESPRESSO MANAGEMENT SYSTEM");
-        headerPanel.add(lblTitle);
-        lblTitle.setBounds(25, 20, 500, 30);
-
-        lblSubtitle.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
-        lblSubtitle.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblSubtitle.setText("Point of Sale & Inventory Control");
-        headerPanel.add(lblSubtitle);
-        lblSubtitle.setBounds(850, 20, 270, 30);
-
-        getContentPane().add(headerPanel, java.awt.BorderLayout.NORTH);
-
         tabbedPane.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         tabbedPane.addChangeListener(this::tabbedPaneStateChanged);
 
@@ -265,10 +242,10 @@ public class MainDashboard extends javax.swing.JFrame {
         jScrollPaneHistory.setViewportView(tabelHistory);
 
         leftHistoryPanel.add(jScrollPaneHistory);
-        jScrollPaneHistory.setBounds(20, 30, 560, 550);
+        jScrollPaneHistory.setBounds(16, 24, 448, 440);
 
         panelHistoryTab.add(leftHistoryPanel);
-        leftHistoryPanel.setBounds(15, 15, 600, 600);
+        leftHistoryPanel.setBounds(12, 12, 480, 480);
 
         rightHistoryPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Detail Transaksi Terpilih"));
         rightHistoryPanel.setLayout(null);
@@ -293,27 +270,32 @@ public class MainDashboard extends javax.swing.JFrame {
         jScrollPaneHistoryDetail.setViewportView(tabelHistoryDetail);
 
         rightHistoryPanel.add(jScrollPaneHistoryDetail);
-        jScrollPaneHistoryDetail.setBounds(20, 30, 450, 410);
+        jScrollPaneHistoryDetail.setBounds(16, 24, 360, 328);
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel11.setText("Total Transaksi:");
         rightHistoryPanel.add(jLabel11);
-        jLabel11.setBounds(20, 460, 150, 25);
+        jLabel11.setBounds(16, 368, 120, 20);
 
         lblHistoryTotal.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         lblHistoryTotal.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblHistoryTotal.setText("Rp 0,00");
+        lblHistoryTotal.setFont(new java.awt.Font("Segoe UI", 1, 20));
+        lblHistoryTotal.setForeground(new java.awt.Color(255, 179, 0));
         rightHistoryPanel.add(lblHistoryTotal);
-        lblHistoryTotal.setBounds(180, 460, 290, 25);
+        lblHistoryTotal.setBounds(144, 368, 232, 20);
 
         btnVoid.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         btnVoid.setText("⚠ Batalkan (Void) Transaksi");
+        btnVoid.setBackground(new java.awt.Color(198, 40, 40));
+        btnVoid.setForeground(new java.awt.Color(255, 255, 255));
+        btnVoid.setFont(new java.awt.Font("Segoe UI", 1, 13));
         btnVoid.addActionListener(this::btnVoidActionPerformed);
         rightHistoryPanel.add(btnVoid);
-        btnVoid.setBounds(20, 500, 450, 40);
+        btnVoid.setBounds(16, 400, 360, 32);
 
         panelHistoryTab.add(rightHistoryPanel);
-        rightHistoryPanel.setBounds(630, 15, 490, 600);
+        rightHistoryPanel.setBounds(504, 12, 392, 480);
 
         tabbedPane.addTab("Riwayat Transaksi", panelHistoryTab);
 
@@ -325,60 +307,72 @@ public class MainDashboard extends javax.swing.JFrame {
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel12.setText("Kode Menu:");
         panelFormMenu.add(jLabel12);
-        jLabel12.setBounds(20, 40, 100, 25);
+        jLabel12.setBounds(16, 32, 80, 20);
         panelFormMenu.add(txtMenuId);
-        txtMenuId.setBounds(130, 40, 340, 25);
+        txtMenuId.setBounds(104, 32, 272, 20);
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel13.setText("Nama Menu:");
         panelFormMenu.add(jLabel13);
-        jLabel13.setBounds(20, 85, 100, 25);
+        jLabel13.setBounds(16, 68, 80, 20);
         panelFormMenu.add(txtMenuNama);
-        txtMenuNama.setBounds(130, 85, 340, 25);
+        txtMenuNama.setBounds(104, 68, 272, 20);
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel14.setText("Kategori:");
         panelFormMenu.add(jLabel14);
-        jLabel14.setBounds(20, 130, 100, 25);
+        jLabel14.setBounds(16, 104, 80, 20);
 
         cbMenuKategori.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "", "", "" }));
         panelFormMenu.add(cbMenuKategori);
-        cbMenuKategori.setBounds(130, 130, 340, 25);
+        cbMenuKategori.setBounds(104, 104, 272, 20);
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel15.setText("Harga (Rp):");
         panelFormMenu.add(jLabel15);
-        jLabel15.setBounds(20, 175, 100, 25);
+        jLabel15.setBounds(16, 140, 80, 20);
         panelFormMenu.add(txtMenuHarga);
-        txtMenuHarga.setBounds(130, 175, 340, 25);
+        txtMenuHarga.setBounds(104, 140, 272, 20);
 
         buttonPanel.setLayout(new java.awt.GridLayout(2, 2));
 
         btnInsert.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnInsert.setText("INSERT");
+        btnInsert.setBackground(new java.awt.Color(46, 125, 50));
+        btnInsert.setForeground(new java.awt.Color(255, 255, 255));
+        btnInsert.setFont(new java.awt.Font("Segoe UI", 1, 12));
         btnInsert.addActionListener(this::btnInsertActionPerformed);
         buttonPanel.add(btnInsert);
 
         btnUpdate.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnUpdate.setText("UPDATE");
+        btnUpdate.setBackground(new java.awt.Color(21, 101, 192));
+        btnUpdate.setForeground(new java.awt.Color(255, 255, 255));
+        btnUpdate.setFont(new java.awt.Font("Segoe UI", 1, 12));
         btnUpdate.addActionListener(this::btnUpdateActionPerformed);
         buttonPanel.add(btnUpdate);
 
         btnDelete.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnDelete.setText("DELETE");
+        btnDelete.setBackground(new java.awt.Color(198, 40, 40));
+        btnDelete.setForeground(new java.awt.Color(255, 255, 255));
+        btnDelete.setFont(new java.awt.Font("Segoe UI", 1, 12));
         btnDelete.addActionListener(this::btnDeleteActionPerformed);
         buttonPanel.add(btnDelete);
 
         btnCancel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnCancel.setText("CANCEL");
+        btnCancel.setBackground(new java.awt.Color(117, 117, 117));
+        btnCancel.setForeground(new java.awt.Color(255, 255, 255));
+        btnCancel.setFont(new java.awt.Font("Segoe UI", 1, 12));
         btnCancel.addActionListener(this::btnCancelActionPerformed);
         buttonPanel.add(btnCancel);
 
         panelFormMenu.add(buttonPanel);
-        buttonPanel.setBounds(20, 240, 450, 90);
+        buttonPanel.setBounds(16, 192, 360, 72);
 
         panelMenuTab.add(panelFormMenu);
-        panelFormMenu.setBounds(15, 15, 500, 600);
+        panelFormMenu.setBounds(12, 12, 400, 480);
 
         panelTableMenu.setBorder(javax.swing.BorderFactory.createTitledBorder("Daftar Data Menu"));
         panelTableMenu.setLayout(null);
@@ -408,13 +402,14 @@ public class MainDashboard extends javax.swing.JFrame {
         jScrollPaneMenu.setViewportView(tabelMenu);
 
         panelTableMenu.add(jScrollPaneMenu);
-        jScrollPaneMenu.setBounds(20, 30, 550, 550);
+        jScrollPaneMenu.setBounds(16, 24, 440, 440);
 
         panelMenuTab.add(panelTableMenu);
-        panelTableMenu.setBounds(530, 15, 590, 600);
+        panelTableMenu.setBounds(424, 12, 472, 480);
 
         tabbedPane.addTab("Kelola Menu", panelMenuTab);
 
+        panelPosTab.setMaximumSize(new java.awt.Dimension(1000, 600));
         panelPosTab.setLayout(null);
 
         leftPosPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Pilih Menu"));
@@ -423,7 +418,7 @@ public class MainDashboard extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel2.setText("Cari Menu:");
         leftPosPanel.add(jLabel2);
-        jLabel2.setBounds(20, 30, 80, 25);
+        jLabel2.setBounds(16, 24, 64, 20);
 
         txtSearchMenu.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -431,7 +426,7 @@ public class MainDashboard extends javax.swing.JFrame {
             }
         });
         leftPosPanel.add(txtSearchMenu);
-        txtSearchMenu.setBounds(110, 30, 420, 25);
+        txtSearchMenu.setBounds(88, 24, 336, 20);
 
         categoryPanel.setLayout(new java.awt.GridLayout(1, 5));
 
@@ -461,7 +456,7 @@ public class MainDashboard extends javax.swing.JFrame {
         categoryPanel.add(btnDessert);
 
         leftPosPanel.add(categoryPanel);
-        categoryPanel.setBounds(20, 65, 510, 30);
+        categoryPanel.setBounds(16, 52, 408, 24);
 
         tabelPosMenu.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -483,17 +478,19 @@ public class MainDashboard extends javax.swing.JFrame {
         jScrollPanePosMenu.setViewportView(tabelPosMenu);
 
         leftPosPanel.add(jScrollPanePosMenu);
-        jScrollPanePosMenu.setBounds(20, 110, 510, 420);
+        jScrollPanePosMenu.setBounds(16, 88, 408, 336);
 
-        btnAddToCart.setBackground(new java.awt.Color(120, 82, 70));
+        btnAddToCart.setBackground(new java.awt.Color(98, 57, 53));
+        btnAddToCart.setForeground(java.awt.Color.WHITE);
+        btnAddToCart.setForeground(java.awt.Color.WHITE);
         btnAddToCart.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnAddToCart.setText("Tambah ke Keranjang");
         btnAddToCart.addActionListener(this::btnAddToCartActionPerformed);
         leftPosPanel.add(btnAddToCart);
-        btnAddToCart.setBounds(20, 545, 510, 40);
+        btnAddToCart.setBounds(16, 436, 408, 32);
 
         panelPosTab.add(leftPosPanel);
-        leftPosPanel.setBounds(15, 15, 550, 600);
+        leftPosPanel.setBounds(12, 12, 440, 480);
 
         rightPosPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Keranjang Transaksi"));
         rightPosPanel.setLayout(null);
@@ -518,19 +515,19 @@ public class MainDashboard extends javax.swing.JFrame {
         jScrollPaneCart.setViewportView(tabelCart);
 
         rightPosPanel.add(jScrollPaneCart);
-        jScrollPaneCart.setBounds(20, 30, 500, 230);
+        jScrollPaneCart.setBounds(16, 24, 400, 184);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel7.setText("Nama Pelanggan:");
         rightPosPanel.add(jLabel7);
-        jLabel7.setBounds(20, 280, 120, 25);
+        jLabel7.setBounds(16, 224, 96, 20);
         rightPosPanel.add(txtCustName);
-        txtCustName.setBounds(150, 280, 370, 25);
+        txtCustName.setBounds(120, 224, 296, 20);
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel8.setText("Bayar Tunai (Rp):");
         rightPosPanel.add(jLabel8);
-        jLabel8.setBounds(20, 315, 120, 25);
+        jLabel8.setBounds(16, 252, 96, 20);
 
         txtCashReceived.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         txtCashReceived.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -539,57 +536,71 @@ public class MainDashboard extends javax.swing.JFrame {
             }
         });
         rightPosPanel.add(txtCashReceived);
-        txtCashReceived.setBounds(150, 315, 370, 25);
+        txtCashReceived.setBounds(120, 252, 296, 20);
 
         totalDisplayPanel.setLayout(null);
+        totalDisplayPanel.setBackground(new java.awt.Color(33, 22, 21));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel9.setText("TOTAL TAGIHAN :");
         totalDisplayPanel.add(jLabel9);
-        jLabel9.setBounds(10, 5, 200, 20);
+        jLabel9.setBounds(8, 4, 160, 16);
 
         lblTotalHarga.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
         lblTotalHarga.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblTotalHarga.setText("Rp 0,00");
+        lblTotalHarga.setFont(new java.awt.Font("Segoe UI", 1, 30));
+        lblTotalHarga.setForeground(new java.awt.Color(255, 179, 0));
         totalDisplayPanel.add(lblTotalHarga);
-        lblTotalHarga.setBounds(10, 25, 480, 45);
+        lblTotalHarga.setBounds(8, 20, 384, 36);
 
         rightPosPanel.add(totalDisplayPanel);
-        totalDisplayPanel.setBounds(20, 355, 500, 80);
+        totalDisplayPanel.setBounds(16, 284, 400, 64);
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel10.setText("Kembalian:");
         rightPosPanel.add(jLabel10);
-        jLabel10.setBounds(20, 450, 120, 25);
+        jLabel10.setBounds(16, 360, 96, 20);
 
         lblChange.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblChange.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblChange.setText("Rp 0,00");
+        lblChange.setFont(new java.awt.Font("Segoe UI", 1, 18));
+        lblChange.setForeground(new java.awt.Color(76, 175, 80));
         rightPosPanel.add(lblChange);
-        lblChange.setBounds(150, 450, 370, 25);
+        lblChange.setBounds(120, 360, 296, 20);
 
         actionBtnPanel.setLayout(new java.awt.GridLayout(1, 3));
 
         btnRemoveFromCart.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnRemoveFromCart.setText("Hapus Item");
+        btnRemoveFromCart.setBackground(new java.awt.Color(198, 40, 40));
+        btnRemoveFromCart.setForeground(new java.awt.Color(255, 255, 255));
+        btnRemoveFromCart.setFont(new java.awt.Font("Segoe UI", 1, 12));
         btnRemoveFromCart.addActionListener(this::btnRemoveFromCartActionPerformed);
         actionBtnPanel.add(btnRemoveFromCart);
 
         btnClearOrder.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnClearOrder.setText("Reset");
+        btnClearOrder.setBackground(new java.awt.Color(117, 117, 117));
+        btnClearOrder.setForeground(new java.awt.Color(255, 255, 255));
+        btnClearOrder.setFont(new java.awt.Font("Segoe UI", 1, 12));
         btnClearOrder.addActionListener(this::btnClearOrderActionPerformed);
         actionBtnPanel.add(btnClearOrder);
 
         btnCheckout.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnCheckout.setText("Checkout");
+        btnCheckout.setBackground(new java.awt.Color(46, 125, 50));
+        btnCheckout.setForeground(new java.awt.Color(255, 255, 255));
+        btnCheckout.setFont(new java.awt.Font("Segoe UI", 1, 14));
         btnCheckout.addActionListener(this::btnCheckoutActionPerformed);
         actionBtnPanel.add(btnCheckout);
 
         rightPosPanel.add(actionBtnPanel);
-        actionBtnPanel.setBounds(20, 490, 500, 45);
+        actionBtnPanel.setBounds(16, 392, 400, 36);
 
         panelPosTab.add(rightPosPanel);
-        rightPosPanel.setBounds(580, 15, 540, 600);
+        rightPosPanel.setBounds(464, 12, 432, 480);
 
         tabbedPane.addTab("Transaksi Penjualan (POS)", panelPosTab);
 
@@ -706,10 +717,10 @@ public class MainDashboard extends javax.swing.JFrame {
     public static void main(String args[]) {
         try {
             // Apply modern UI styling properties to UIManager before FlatLaf initialization
-            javax.swing.UIManager.put("Button.arc", 8);
-            javax.swing.UIManager.put("Component.arc", 8);
-            javax.swing.UIManager.put("TextComponent.arc", 8);
-            javax.swing.UIManager.put("ProgressBar.arc", 8);
+            javax.swing.UIManager.put("Button.arc", 0);
+            javax.swing.UIManager.put("Component.arc", 0);
+            javax.swing.UIManager.put("TextComponent.arc", 0);
+            javax.swing.UIManager.put("ProgressBar.arc", 0);
             javax.swing.UIManager.put("ScrollBar.thumbArc", 999);
             javax.swing.UIManager.put("ScrollBar.trackArc", 999);
             javax.swing.UIManager.put("TabbedPane.showTabSeparators", true);
@@ -750,7 +761,6 @@ public class MainDashboard extends javax.swing.JFrame {
     private javax.swing.JPanel buttonPanel;
     private javax.swing.JPanel categoryPanel;
     private javax.swing.JComboBox cbMenuKategori;
-    private javax.swing.JPanel headerPanel;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -768,8 +778,6 @@ public class MainDashboard extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPanePosMenu;
     private javax.swing.JLabel lblChange;
     private javax.swing.JLabel lblHistoryTotal;
-    private javax.swing.JLabel lblSubtitle;
-    private javax.swing.JLabel lblTitle;
     private javax.swing.JLabel lblTotalHarga;
     private javax.swing.JPanel leftHistoryPanel;
     private javax.swing.JPanel leftPosPanel;

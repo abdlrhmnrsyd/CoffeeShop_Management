@@ -1,9 +1,6 @@
 view\MainDashboard$3.class
 view\MainDashboard$9.class
-view\LoginForm$2.class
 model\OrderDetail.class
-view\LoginForm$1.class
-view\LoginForm.class
 view\MainDashboard$1.class
 view\MainDashboard$2.class
 model\Order.class
