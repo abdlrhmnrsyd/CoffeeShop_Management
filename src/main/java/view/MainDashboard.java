@@ -136,6 +136,7 @@ public class MainDashboard extends javax.swing.JFrame {
         lblHistoryTotal.setFont(new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 20));
 
         // 7. Polish Header styling (Removed as headerPanel was deleted in NetBeans)
+        updateCategoryButtons("All");
     }
 
     /**
@@ -270,12 +271,12 @@ public class MainDashboard extends javax.swing.JFrame {
         jScrollPaneHistoryDetail.setViewportView(tabelHistoryDetail);
 
         rightHistoryPanel.add(jScrollPaneHistoryDetail);
-        jScrollPaneHistoryDetail.setBounds(16, 24, 360, 328);
+        jScrollPaneHistoryDetail.setBounds(16, 24, 360, 310);
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel11.setText("Total Transaksi:");
         rightHistoryPanel.add(jLabel11);
-        jLabel11.setBounds(16, 368, 120, 20);
+        jLabel11.setBounds(16, 348, 120, 30);
 
         lblHistoryTotal.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         lblHistoryTotal.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -283,7 +284,7 @@ public class MainDashboard extends javax.swing.JFrame {
         lblHistoryTotal.setFont(new java.awt.Font("Segoe UI", 1, 20));
         lblHistoryTotal.setForeground(new java.awt.Color(255, 179, 0));
         rightHistoryPanel.add(lblHistoryTotal);
-        lblHistoryTotal.setBounds(144, 368, 232, 20);
+        lblHistoryTotal.setBounds(144, 348, 232, 30);
 
         btnVoid.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         btnVoid.setText("⚠ Batalkan (Void) Transaksi");
@@ -292,7 +293,7 @@ public class MainDashboard extends javax.swing.JFrame {
         btnVoid.setFont(new java.awt.Font("Segoe UI", 1, 13));
         btnVoid.addActionListener(this::btnVoidActionPerformed);
         rightHistoryPanel.add(btnVoid);
-        btnVoid.setBounds(16, 400, 360, 32);
+        btnVoid.setBounds(16, 390, 360, 38);
 
         panelHistoryTab.add(rightHistoryPanel);
         rightHistoryPanel.setBounds(504, 12, 392, 480);
@@ -307,32 +308,32 @@ public class MainDashboard extends javax.swing.JFrame {
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel12.setText("Kode Menu:");
         panelFormMenu.add(jLabel12);
-        jLabel12.setBounds(16, 32, 80, 20);
+        jLabel12.setBounds(16, 32, 80, 30);
         panelFormMenu.add(txtMenuId);
-        txtMenuId.setBounds(104, 32, 272, 20);
+        txtMenuId.setBounds(114, 32, 262, 30);
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel13.setText("Nama Menu:");
         panelFormMenu.add(jLabel13);
-        jLabel13.setBounds(16, 68, 80, 20);
+        jLabel13.setBounds(16, 72, 80, 30);
         panelFormMenu.add(txtMenuNama);
-        txtMenuNama.setBounds(104, 68, 272, 20);
+        txtMenuNama.setBounds(114, 72, 262, 30);
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel14.setText("Kategori:");
         panelFormMenu.add(jLabel14);
-        jLabel14.setBounds(16, 104, 80, 20);
+        jLabel14.setBounds(16, 112, 80, 30);
 
         cbMenuKategori.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "", "", "" }));
         panelFormMenu.add(cbMenuKategori);
-        cbMenuKategori.setBounds(104, 104, 272, 20);
+        cbMenuKategori.setBounds(114, 112, 262, 30);
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel15.setText("Harga (Rp):");
         panelFormMenu.add(jLabel15);
-        jLabel15.setBounds(16, 140, 80, 20);
+        jLabel15.setBounds(16, 152, 80, 30);
         panelFormMenu.add(txtMenuHarga);
-        txtMenuHarga.setBounds(104, 140, 272, 20);
+        txtMenuHarga.setBounds(114, 152, 262, 30);
 
         buttonPanel.setLayout(new java.awt.GridLayout(2, 2));
 
@@ -369,7 +370,7 @@ public class MainDashboard extends javax.swing.JFrame {
         buttonPanel.add(btnCancel);
 
         panelFormMenu.add(buttonPanel);
-        buttonPanel.setBounds(16, 192, 360, 72);
+        buttonPanel.setBounds(16, 202, 360, 80);
 
         panelMenuTab.add(panelFormMenu);
         panelFormMenu.setBounds(12, 12, 400, 480);
@@ -418,7 +419,7 @@ public class MainDashboard extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel2.setText("Cari Menu:");
         leftPosPanel.add(jLabel2);
-        jLabel2.setBounds(16, 24, 64, 20);
+        jLabel2.setBounds(16, 20, 64, 30);
 
         txtSearchMenu.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -426,7 +427,7 @@ public class MainDashboard extends javax.swing.JFrame {
             }
         });
         leftPosPanel.add(txtSearchMenu);
-        txtSearchMenu.setBounds(88, 24, 336, 20);
+        txtSearchMenu.setBounds(88, 20, 336, 30);
 
         categoryPanel.setLayout(new java.awt.GridLayout(1, 5));
 
@@ -456,7 +457,7 @@ public class MainDashboard extends javax.swing.JFrame {
         categoryPanel.add(btnDessert);
 
         leftPosPanel.add(categoryPanel);
-        categoryPanel.setBounds(16, 52, 408, 24);
+        categoryPanel.setBounds(16, 62, 408, 30);
 
         tabelPosMenu.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -478,7 +479,7 @@ public class MainDashboard extends javax.swing.JFrame {
         jScrollPanePosMenu.setViewportView(tabelPosMenu);
 
         leftPosPanel.add(jScrollPanePosMenu);
-        jScrollPanePosMenu.setBounds(16, 88, 408, 336);
+        jScrollPanePosMenu.setBounds(16, 102, 408, 318);
 
         btnAddToCart.setBackground(new java.awt.Color(98, 57, 53));
         btnAddToCart.setForeground(java.awt.Color.WHITE);
@@ -487,7 +488,7 @@ public class MainDashboard extends javax.swing.JFrame {
         btnAddToCart.setText("Tambah ke Keranjang");
         btnAddToCart.addActionListener(this::btnAddToCartActionPerformed);
         leftPosPanel.add(btnAddToCart);
-        btnAddToCart.setBounds(16, 436, 408, 32);
+        btnAddToCart.setBounds(16, 432, 408, 36);
 
         panelPosTab.add(leftPosPanel);
         leftPosPanel.setBounds(12, 12, 440, 480);
@@ -515,19 +516,19 @@ public class MainDashboard extends javax.swing.JFrame {
         jScrollPaneCart.setViewportView(tabelCart);
 
         rightPosPanel.add(jScrollPaneCart);
-        jScrollPaneCart.setBounds(16, 24, 400, 184);
+        jScrollPaneCart.setBounds(16, 24, 400, 160);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel7.setText("Nama Pelanggan:");
         rightPosPanel.add(jLabel7);
-        jLabel7.setBounds(16, 224, 96, 20);
+        jLabel7.setBounds(16, 198, 110, 30);
         rightPosPanel.add(txtCustName);
-        txtCustName.setBounds(120, 224, 296, 20);
+        txtCustName.setBounds(136, 198, 280, 30);
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel8.setText("Bayar Tunai (Rp):");
         rightPosPanel.add(jLabel8);
-        jLabel8.setBounds(16, 252, 96, 20);
+        jLabel8.setBounds(16, 238, 110, 30);
 
         txtCashReceived.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         txtCashReceived.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -536,7 +537,7 @@ public class MainDashboard extends javax.swing.JFrame {
             }
         });
         rightPosPanel.add(txtCashReceived);
-        txtCashReceived.setBounds(120, 252, 296, 20);
+        txtCashReceived.setBounds(136, 238, 280, 30);
 
         totalDisplayPanel.setLayout(null);
         totalDisplayPanel.setBackground(new java.awt.Color(33, 22, 21));
@@ -552,15 +553,15 @@ public class MainDashboard extends javax.swing.JFrame {
         lblTotalHarga.setFont(new java.awt.Font("Segoe UI", 1, 30));
         lblTotalHarga.setForeground(new java.awt.Color(255, 179, 0));
         totalDisplayPanel.add(lblTotalHarga);
-        lblTotalHarga.setBounds(8, 20, 384, 36);
+        lblTotalHarga.setBounds(8, 30, 384, 40);
 
         rightPosPanel.add(totalDisplayPanel);
-        totalDisplayPanel.setBounds(16, 284, 400, 64);
+        totalDisplayPanel.setBounds(16, 278, 400, 80);
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jLabel10.setText("Kembalian:");
         rightPosPanel.add(jLabel10);
-        jLabel10.setBounds(16, 360, 96, 20);
+        jLabel10.setBounds(16, 370, 110, 30);
 
         lblChange.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblChange.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -568,7 +569,7 @@ public class MainDashboard extends javax.swing.JFrame {
         lblChange.setFont(new java.awt.Font("Segoe UI", 1, 18));
         lblChange.setForeground(new java.awt.Color(76, 175, 80));
         rightPosPanel.add(lblChange);
-        lblChange.setBounds(120, 360, 296, 20);
+        lblChange.setBounds(136, 370, 280, 30);
 
         actionBtnPanel.setLayout(new java.awt.GridLayout(1, 3));
 
@@ -597,7 +598,7 @@ public class MainDashboard extends javax.swing.JFrame {
         actionBtnPanel.add(btnCheckout);
 
         rightPosPanel.add(actionBtnPanel);
-        actionBtnPanel.setBounds(16, 392, 400, 36);
+        actionBtnPanel.setBounds(16, 412, 400, 40);
 
         panelPosTab.add(rightPosPanel);
         rightPosPanel.setBounds(464, 12, 432, 480);
@@ -714,19 +715,39 @@ public class MainDashboard extends javax.swing.JFrame {
     public JTable getTabelHistoryDetail() { return tabelHistoryDetail; }
     public JLabel getLblHistoryTotal() { return lblHistoryTotal; }
 
+    public void updateCategoryButtons(String activeCat) {
+        javax.swing.JButton[] buttons = { btnAll, btnCoffee, btnNonCoffee, btnFood, btnDessert };
+        String[] cats = { "All", "Coffee", "Non-Coffee", "Food", "Dessert" };
+        for (int i = 0; i < buttons.length; i++) {
+            if (buttons[i] == null) continue;
+            if (cats[i].equalsIgnoreCase(activeCat)) {
+                buttons[i].setBackground(new java.awt.Color(98, 57, 53));
+                buttons[i].setForeground(java.awt.Color.WHITE);
+            } else {
+                buttons[i].setBackground(new java.awt.Color(45, 45, 45));
+                buttons[i].setForeground(new java.awt.Color(200, 200, 200));
+            }
+        }
+    }
+
     public static void main(String args[]) {
         try {
             // Apply modern UI styling properties to UIManager before FlatLaf initialization
-            javax.swing.UIManager.put("Button.arc", 0);
-            javax.swing.UIManager.put("Component.arc", 0);
-            javax.swing.UIManager.put("TextComponent.arc", 0);
-            javax.swing.UIManager.put("ProgressBar.arc", 0);
+            javax.swing.UIManager.put("Button.arc", 12);
+            javax.swing.UIManager.put("Component.arc", 12);
+            javax.swing.UIManager.put("TextComponent.arc", 12);
+            javax.swing.UIManager.put("ProgressBar.arc", 12);
             javax.swing.UIManager.put("ScrollBar.thumbArc", 999);
             javax.swing.UIManager.put("ScrollBar.trackArc", 999);
             javax.swing.UIManager.put("TabbedPane.showTabSeparators", true);
-            javax.swing.UIManager.put("TabbedPane.tabHeight", 36);
+            javax.swing.UIManager.put("TabbedPane.tabHeight", 40);
             javax.swing.UIManager.put("TabbedPane.selectedBackground", new java.awt.Color(98, 57, 53));
             javax.swing.UIManager.put("TabbedPane.selectedForeground", java.awt.Color.WHITE);
+            javax.swing.UIManager.put("TabbedPane.hoverColor", new java.awt.Color(120, 80, 75));
+            javax.swing.UIManager.put("Table.selectionBackground", new java.awt.Color(120, 80, 75));
+            javax.swing.UIManager.put("Table.selectionForeground", java.awt.Color.WHITE);
+            javax.swing.UIManager.put("TableHeader.background", new java.awt.Color(50, 40, 38));
+            javax.swing.UIManager.put("TableHeader.foreground", java.awt.Color.WHITE);
 
             // Attempt to load macOS Dark theme first, fallback to standard dark theme
             try {

@@ -44,6 +44,7 @@ public class OrderController {
 
     public void setActiveCategory(String category) {
         this.activeCategory = category;
+        dashboard.updateCategoryButtons(category);
         tampilMenuFiltered();
     }
     
